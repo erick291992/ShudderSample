@@ -6,7 +6,7 @@
 //  Copyright © 2018 homeapps. All rights reserved.
 //
 import Foundation
-
+// This class is used for 2 way binding data to views
 class Bindable<T> {
     typealias Listener = ((T) -> Void)
     

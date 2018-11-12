@@ -39,7 +39,6 @@ class FeaturedCollectionViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: cellId, bundle: nil), forCellWithReuseIdentifier: cellId)
         
-//        collectionView.register(UINib(nibName: cellHeaderId, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: cellHeaderId)
     }
     
     func bindViewModel() {
@@ -90,7 +89,7 @@ extension FeaturedCollectionViewController: UICollectionViewDelegate, UICollecti
         let cellViewModel = viewModel.featuredCollectionViewCellViewModels.value[indexPath.row]
         
         cell.viewModel = cellViewModel
-        // Normally i would set this in the view model itself but it will get to complicated to do that because the headers titles array is hard coded
+        // Normally I would set this in the view model itself but it will get to complicated to do that because the headers titles array is hard coded
         cell.featuredLabel.text = viewModel.featuresHeaderTitles[indexPath.row]
         return cell
     }

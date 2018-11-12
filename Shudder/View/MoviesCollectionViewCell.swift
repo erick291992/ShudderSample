@@ -19,6 +19,7 @@ class MoviesCollectionViewCell: UICollectionViewCell {
                 return
             }
             
+            // Creating url of the image. this will then be called by the imageview to load it and cache it
             let imageUrl = "https://farm\(movie.farm).staticflickr.com/\(movie.server)/\(movie.id)_\(movie.secret).jpg"
             movieImageView.loadImage(urlString: imageUrl)
         }

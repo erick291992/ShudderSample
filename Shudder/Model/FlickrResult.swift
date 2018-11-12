@@ -11,6 +11,7 @@ import Foundation
 struct FlickrResult: Codable {
     var flickrData: FlickrData
     
+    // Mapping variables to keys that decodable will use to load into from json
     private enum CodingKeys : String, CodingKey {
         case flickrData = "photos"
     }
