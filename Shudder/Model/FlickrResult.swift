@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+struct FlickrResult: Codable {
+    var flickrData: FlickrData
+    
+    private enum CodingKeys : String, CodingKey {
+        case flickrData = "photos"
+    }
+}
+
+struct FlickrData: Codable {
+    var pages: Int
+    var perpage: Int
+    var total: String
+    var photo: [Photo]
+    
+}

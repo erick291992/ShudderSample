@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import SwiftyBeaver
+
+// used to allow logs throughtout the app
+let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // add log destinations. at least one is needed!
+        let console = ConsoleDestination()
+        
+        // add the destinations to SwiftyBeaver
+        log.addDestination(console)
         return true
     }
 

@@ -9,10 +9,28 @@
 import UIKit
 
 class MoviesCollectionViewCell: UICollectionViewCell {
+    // MARK: - IBOutlet
+    @IBOutlet weak var movieImageView: CachedImageView!
+    
+    // MARK: - Variables
+    var movie: Photo? {
+        didSet {
+            guard let movie = movie else {
+                return
+            }
+            
+            let imageUrl = "https://farm\(movie.farm).staticflickr.com/\(movie.server)/\(movie.id)_\(movie.secret).jpg"
+            movieImageView.loadImage(urlString: imageUrl)
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // Setting up round corners
+        movieImageView.layer.cornerRadius = 4
+        movieImageView.layer.masksToBounds = true
+        movieImageView.clipsToBounds = true
     }
 
 }

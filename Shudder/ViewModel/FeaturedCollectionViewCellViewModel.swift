@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+
+class FeaturedCollectionViewCellViewModel {
+    var featuredPhotos:[Photo]
+    
+    init(featuredPhotos:[Photo]) {
+        self.featuredPhotos = featuredPhotos
+    }
+}
