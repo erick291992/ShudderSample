@@ -1,0 +1,6 @@
+framework module Pods_Shudder {
+  umbrella header "Pods-Shudder-umbrella.h"
+
+  export *
+  module * { export * }
+}

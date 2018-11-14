@@ -13,9 +13,7 @@
 		CD2D2A7D219739F500B59737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2D2A7C219739F500B59737 /* Assets.xcassets */; };
 		CD2D2A80219739F500B59737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2D2A7E219739F500B59737 /* LaunchScreen.storyboard */; };
 		CD2D2A8921973AFB00B59737 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2A8821973AFB00B59737 /* NetworkService.swift */; };
-		CD2D2A8C21973D6200B59737 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2D2A8B21973D6200B59737 /* Alamofire.framework */; };
 		CD2D2A8F2197DE8F00B59737 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2A8E2197DE8F00B59737 /* Constants.swift */; };
-		CD2D2A912197E0FC00B59737 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2D2A902197E0FC00B59737 /* SwiftyBeaver.framework */; };
 		CD2D2A952197E5DE00B59737 /* FeaturedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2A942197E5DE00B59737 /* FeaturedCollectionViewController.swift */; };
 		CD2D2A992197E86700B59737 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2A972197E86700B59737 /* FeaturedCollectionViewCell.swift */; };
 		CD2D2A9A2197E86700B59737 /* FeaturedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2D2A982197E86700B59737 /* FeaturedCollectionViewCell.xib */; };
@@ -31,9 +29,12 @@
 		CD2D2AB32198BDD700B59737 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2AB22198BDD700B59737 /* Array+Extension.swift */; };
 		CD2D2AB52198C95F00B59737 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2AB42198C95F00B59737 /* CachedImageView.swift */; };
 		CD2D2AB72198C9B300B59737 /* DiscardableImageCacheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D2AB62198C9B300B59737 /* DiscardableImageCacheItem.swift */; };
+		E1AA43613B9858833EDF1993 /* Pods_Shudder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BFCB6ECC3DD2765B4105F4 /* Pods_Shudder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42CCF390068CF90B21E71EF7 /* Pods-Shudder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shudder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shudder/Pods-Shudder.release.xcconfig"; sourceTree = "<group>"; };
+		95EFA7782DDD78A98BD5366C /* Pods-Shudder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shudder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shudder/Pods-Shudder.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2D2A72219739F100B59737 /* Shudder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shudder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2D2A75219739F100B59737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD2D2A77219739F100B59737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		CD2D2AB22198BDD700B59737 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		CD2D2AB42198C95F00B59737 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		CD2D2AB62198C9B300B59737 /* DiscardableImageCacheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscardableImageCacheItem.swift; sourceTree = "<group>"; };
+		D3BFCB6ECC3DD2765B4105F4 /* Pods_Shudder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shudder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,20 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2D2A8C21973D6200B59737 /* Alamofire.framework in Frameworks */,
-				CD2D2A912197E0FC00B59737 /* SwiftyBeaver.framework in Frameworks */,
+				E1AA43613B9858833EDF1993 /* Pods_Shudder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51CA43DEEEE63D1CFD78AED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95EFA7782DDD78A98BD5366C /* Pods-Shudder.debug.xcconfig */,
+				42CCF390068CF90B21E71EF7 /* Pods-Shudder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD2D2A69219739F100B59737 = {
 			isa = PBXGroup;
 			children = (
 				CD2D2A74219739F100B59737 /* Shudder */,
 				CD2D2A73219739F100B59737 /* Products */,
 				CD2D2A8A21973D6100B59737 /* Frameworks */,
+				51CA43DEEEE63D1CFD78AED0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +138,7 @@
 			children = (
 				CD2D2A902197E0FC00B59737 /* SwiftyBeaver.framework */,
 				CD2D2A8B21973D6200B59737 /* Alamofire.framework */,
+				D3BFCB6ECC3DD2765B4105F4 /* Pods_Shudder.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,10 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD2D2A84219739F500B59737 /* Build configuration list for PBXNativeTarget "Shudder" */;
 			buildPhases = (
+				E32BE554CEEEB7C2562187CA /* [CP] Check Pods Manifest.lock */,
 				CD2D2A6E219739F100B59737 /* Sources */,
 				CD2D2A6F219739F100B59737 /* Frameworks */,
 				CD2D2A70219739F100B59737 /* Resources */,
 				CD2D2A8D21973E5000B59737 /* ShellScript */,
+				639262C285AAFCA82C7504C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +271,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		639262C285AAFCA82C7504C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shudder/Pods-Shudder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shudder/Pods-Shudder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CD2D2A8D21973E5000B59737 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,8 +303,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -275,6 +311,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+		E32BE554CEEEB7C2562187CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shudder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -443,6 +501,7 @@
 		};
 		CD2D2A85219739F500B59737 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95EFA7782DDD78A98BD5366C /* Pods-Shudder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +525,7 @@
 		};
 		CD2D2A86219739F500B59737 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CCF390068CF90B21E71EF7 /* Pods-Shudder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
